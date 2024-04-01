@@ -1,0 +1,95 @@
+{
+  "index.qmd": {
+    "index.html": "268c59a6"
+  },
+  "intro.qmd": {
+    "intro.html": "55025c8c"
+  },
+  "summary.qmd": {
+    "summary.html": "2193f3b7"
+  },
+  "references.qmd": {
+    "references.html": "7bfcd0bf"
+  },
+  "environments_as_code.qmd": {
+    "environments_as_code.html": "bb9faa7c"
+  },
+  "chapters/intro.qmd": {
+    "intro.html": "16fdac99"
+  },
+  "chapters/sec1/1-0-sec-intro.qmd": {
+    "1-0-sec-intro.html": "ff5b0a30"
+  },
+  "chapters/sec1/1-1-env-as-code.qmd": {
+    "1-1-env-as-code.html": "0664e267"
+  },
+  "chapters/sec1/1-2-proj-arch.qmd": {
+    "1-2-proj-arch.html": "8c1dcea5"
+  },
+  "chapters/sec1/1-3-data-access.qmd": {
+    "1-3-data-access.html": "d16070fd"
+  },
+  "chapters/sec1/1-4-monitor-log.qmd": {
+    "1-4-monitor-log.html": "fc405ad9"
+  },
+  "chapters/sec1/1-5-deployments.qmd": {
+    "1-5-deployments.html": "a37e7b4f"
+  },
+  "chapters/sec1/1-6-docker.qmd": {
+    "1-6-docker.html": "fef43e52"
+  },
+  "chapters/sec2/2-0-sec-intro.qmd": {
+    "2-0-sec-intro.html": "8d665fcd"
+  },
+  "chapters/sec2/2-1-cloud.qmd": {
+    "2-1-cloud.html": "761efc46"
+  },
+  "chapters/sec2/2-2-cmd-line.qmd": {
+    "2-2-cmd-line.html": "8a0c7b0f"
+  },
+  "chapters/sec2/2-3-linux.qmd": {
+    "2-3-linux.html": "f8d68bfb"
+  },
+  "chapters/sec2/2-4-app-admin.qmd": {
+    "2-4-app-admin.html": "ac04306e"
+  },
+  "chapters/sec2/2-5-scale.qmd": {
+    "2-5-scale.html": "e9945937"
+  },
+  "chapters/sec2/2-6-networking.qmd": {
+    "2-6-networking.html": "fb808754"
+  },
+  "chapters/sec2/2-7-dns.qmd": {
+    "2-7-dns.html": "ee56f3e6"
+  },
+  "chapters/sec2/2-8-ssl.qmd": {
+    "2-8-ssl.html": "f3125b6f"
+  },
+  "chapters/sec3/3-0-sec-intro.qmd": {
+    "3-0-sec-intro.html": "12ec5bf8"
+  },
+  "chapters/sec3/3-1-ent-networks.qmd": {
+    "3-1-ent-networks.html": "00e81ba1"
+  },
+  "chapters/sec3/3-2-auth.qmd": {
+    "3-2-auth.html": "90bd6f82"
+  },
+  "chapters/sec3/3-3-ent-scale.qmd": {
+    "3-3-ent-scale.html": "2b968bb0"
+  },
+  "chapters/sec3/3-4-ent-pm.qmd": {
+    "3-4-ent-pm.html": "9cc4bd6b"
+  },
+  "chapters/append/auth.qmd": {
+    "auth.html": "dd73ff8a"
+  },
+  "chapters/append/lb.qmd": {
+    "lb.html": "6ec3c1af"
+  },
+  "chapters/append/lab-map.qmd": {
+    "lab-map.html": "dd79667a"
+  },
+  "chapters/append/cheatsheets.qmd": {
+    "cheatsheets.html": "3d0ec2a7"
+  }
+}

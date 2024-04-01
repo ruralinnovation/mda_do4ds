@@ -1,0 +1,9 @@
+# Preface {.unnumbered}
+
+The MDA team at CORI will do a book club and review the book [DevOps for Data Science](https://do4ds.com/) wrote be **Alex K Gold** here.
+
+Book club inspiration: https://github.com/r4ds
+
+This is a Quarto book.
+
+To learn more about Quarto books visit <https://quarto.org/docs/books>.

@@ -1,0 +1,51 @@
+project:
+  type: book
+
+book:
+  title: "MDA book club do4ds"
+  author: "MDA"
+  date: last-modified 
+  chapters:
+    - index.qmd
+    - chapters/intro.qmd
+    - part: chapters/sec1/1-0-sec-intro.qmd
+      chapters:
+      - chapters/sec1/1-1-env-as-code.qmd
+      - chapters/sec1/1-2-proj-arch.qmd
+      - chapters/sec1/1-3-data-access.qmd
+      - chapters/sec1/1-4-monitor-log.qmd
+      - chapters/sec1/1-5-deployments.qmd
+      - chapters/sec1/1-6-docker.qmd
+    - part: chapters/sec2/2-0-sec-intro.qmd
+      chapters:
+      - chapters/sec2/2-1-cloud.qmd
+      - chapters/sec2/2-2-cmd-line.qmd
+      - chapters/sec2/2-3-linux.qmd
+      - chapters/sec2/2-4-app-admin.qmd
+      - chapters/sec2/2-5-scale.qmd
+      - chapters/sec2/2-6-networking.qmd
+      - chapters/sec2/2-7-dns.qmd
+      - chapters/sec2/2-8-ssl.qmd
+    - part: chapters/sec3/3-0-sec-intro.qmd
+      chapters:
+      - chapters/sec3/3-1-ent-networks.qmd
+      - chapters/sec3/3-2-auth.qmd
+      - chapters/sec3/3-3-ent-scale.qmd
+      - chapters/sec3/3-4-ent-pm.qmd
+
+  appendices:
+    - chapters/append/auth.qmd
+    - chapters/append/lb.qmd
+    - chapters/append/lab-map.qmd
+    - chapters/append/cheatsheets.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+
