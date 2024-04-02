@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MDA book club do4ds",
+    "section": "",
+    "text": "Preface\nThe MDA team at CORI will do a book club and review the book DevOps for Data Science wrote be Alex K Gold here.\nBook club inspiration: https://github.com/r4ds\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "chapters/intro.html",
+    "href": "chapters/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-0-sec-intro.html",
+    "href": "chapters/sec1/1-0-sec-intro.html",
+    "title": "DevOps Lessons for Data Science",
+    "section": "",
+    "text": "Learning objectives:",
+    "crumbs": [
+      "DevOps Lessons for Data Science"
+    ]
+  }
+]
