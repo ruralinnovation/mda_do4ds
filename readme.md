@@ -3,5 +3,5 @@ The MDA team at CORI will do a book club and review the book [DevOps for Data Sc
 
 Planning:
 
-intro + environments as code: Olivier
+1. intro + environments as code: Olivier
 
