@@ -4,7 +4,7 @@
 
 But:
 
-Writing code for data science is different than writing code:
+- Writing code for data science is different than writing code:
 
 > You’re pointed at some data and asked to derive value from it without even knowing if that’s possible.
 

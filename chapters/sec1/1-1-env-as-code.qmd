@@ -1,0 +1,69 @@
+# Environments as Code
+
+## Environments: 
+
+ - stack of software and hardware below our code
+
+ - should be treated as "cattle not pet" / should be *stateless*
+
+- Risk of it "works on my machine"
+
+Building a completly reproducible environement is a "fool’s errand" but first step should be easy.
+
+(any trouble with renv and sf anyone?)
+
+## Environements have layers 
+
+| Layer    | Contents| Example  |
+| -------- | ------- | -----    |
+| Packages  | R packages    | cori.db  |
+| System |   R versions / GDAL  / MacOS | 14.4.1 |
+| hardware  | Physical / Virtual hardware | Apple M3 |
+
+Hardware and System should be in the hand of IT (see later chapter 7 and 14), packages layer should be the data scientist. 
+
+## The package layer
+
+Package can in 3 places:
+
+- repository: CRAN / GH / "Supermarket"
+
+- library: a folder on a drive / "pantry"
+
+- loaded : "ready to cook"
+
+Each **project** should have it's own "pantry" 
+
+Project was higlighted in text but I think it is important: if you do not have a project workflow it is way harder to do it. 
+
+A package environement shouldbe :
+
+- isolated and cannot be disrupted (example updating a packge in an other project)
+
+- can be "captured" and "transported"
+
+In R: `{Renv}` ("light"/"not exactly the same" option also exist, [Box](https://github.com/klmr/box), [capsule](https://github.com/MilesMcBain/capsule)) 
+
+Author does not like Conda (good to not being alone!)
+
+## Workflow
+
+- Create a standalone directory with a virtual environment 
+
+(spend time exploring `renv/` and `.gitignore`)
+
+- Document environment state (see `lockfile`)
+
+- Collaborate / deploy: you can't share package because their binay can be OS or system specific, hence specific package need to be installed (could be a pain point).
+
+- Use virtual env
+
+## Under the hood
+
+- test `.libpaths()` in a specific project and in a "random" R session
+
+- order of Paths matter
+
+## Key points 
+
+
