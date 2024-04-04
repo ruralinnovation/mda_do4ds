@@ -1,5 +1,16 @@
 # Introduction {.unnumbered}
 
+## proposed workflow:
+
+    1. Clone the repo
+
+    2. Create a specific branch: ` git checkout -b intro_env_as`
+
+    3. Commit as needed
+
+    4. Push your commits in a pull request
+
+
 This is a book created from markdown and executable code.
 
 See @knuth84 for additional discussion of literate programming.
