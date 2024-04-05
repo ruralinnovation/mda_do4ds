@@ -1,5 +1,39 @@
 # Introduction {.unnumbered}
 
-This is a book created from markdown and executable code.
+**Learning objectives:**
 
-See @knuth84 for additional discussion of literate programming.
+- introducing some definitions and a bit of history 
+
+## Definitions
+
+ *production* :  
+
+>   affecting decision in your orgs / world 
+
+> putting your work in front of someone else’s eyes
+
+We want:
+
+- our works to be **reliable**
+
+- in a safe **environment** 
+
+- our work to be **available** 
+
+## DevOps
+
+> DevOps is a set of **cultural norms**, **practices**, and **tooling** to help make developing and deploying software **smoother** and **lower risk**.
+
+.. but is a squishy concept and a "vendor" associated name 
+
+It came in opposition to the *waterfall dev process* were you had a team doing Dev. and then one other doing Ops (Ops "make it works on everyone computer"). 
+
+## Process and people
+
+- Are data scientist software developper?
+
+- Are we in the red flags number 3?
+
+- Do we need a workbench (ie using ec2) ?
+
+- should we do the exercice with `penguins` or one of our dataset?
