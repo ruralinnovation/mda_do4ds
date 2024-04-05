@@ -4,7 +4,17 @@
     "href": "index.html",
     "title": "MDA book club do4ds",
     "section": "",
-    "text": "Preface\nThe MDA team at CORI will do a book club and review the book DevOps for Data Science wrote be Alex K Gold here.\nBook club inspiration: https://github.com/r4ds\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Preface\nThe MDA team at CORI will do a book club and review the book DevOps for Data Science wrote be Alex K Gold here.\nBook club inspiration: https://github.com/r4ds",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#proposed-workflow",
+    "href": "index.html#proposed-workflow",
+    "title": "MDA book club do4ds",
+    "section": "proposed workflow:",
+    "text": "proposed workflow:\n1. Clone the repo\n\n2. Create a specific branch: ` git checkout -b intro_env_as`\n\n3. Commit as needed\n\n4. Push your commits in a pull request\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
       "Preface"
     ]
@@ -14,7 +24,37 @@
     "href": "chapters/intro.html",
     "title": "Introduction",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Definitions\nproduction :\nWe want:",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/intro.html#definitions",
+    "href": "chapters/intro.html#definitions",
+    "title": "Introduction",
+    "section": "",
+    "text": "affecting decision in your orgs / world\n\n\nputting your work in front of someone else’s eyes\n\n\n\nour works to be reliable\nin a safe environment\nour work to be available",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/intro.html#devops",
+    "href": "chapters/intro.html#devops",
+    "title": "Introduction",
+    "section": "DevOps",
+    "text": "DevOps\n\nDevOps is a set of cultural norms, practices, and tooling to help make developing and deploying software smoother and lower risk.\n\n.. but is a squishy concept and a “vendor” associated name\nIt came in opposition to the waterfall dev process were you had a team doing Dev. and then one other doing Ops (Ops “make it works on everyone computer”).",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/intro.html#process-and-people",
+    "href": "chapters/intro.html#process-and-people",
+    "title": "Introduction",
+    "section": "Process and people",
+    "text": "Process and people\n\nAre data scientist software developper?\nAre we in the red flags number 3?\nDo we need a workbench (ie using ec2) ?\nshould we do the exercice with penguins or one of our dataset?",
     "crumbs": [
       "Introduction"
     ]
@@ -24,9 +64,86 @@
     "href": "chapters/sec1/1-0-sec-intro.html",
     "title": "DevOps Lessons for Data Science",
     "section": "",
-    "text": "Learning objectives:",
+    "text": "You are a software developer.\n\nBut:\n\nWriting code for data science is different than writing code:\n\n\nYou’re pointed at some data and asked to derive value from it without even knowing if that’s possible.\n\n\ndifference between architect and archaeologist",
     "crumbs": [
       "DevOps Lessons for Data Science"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-1-env-as-code.html",
+    "href": "chapters/sec1/1-1-env-as-code.html",
+    "title": "1  Environments as Code",
+    "section": "",
+    "text": "1.1 Environments:\nBuilding a completly reproducible environement is a “fool’s errand” but first step should be easy.\n(any trouble with renv and sf anyone?)",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Environments as Code</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-1-env-as-code.html#environments",
+    "href": "chapters/sec1/1-1-env-as-code.html#environments",
+    "title": "1  Environments as Code",
+    "section": "",
+    "text": "stack of software and hardware below our code\nshould be treated as “cattle not pet” / should be stateless\nRisk of it “only works on my machine”",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Environments as Code</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-1-env-as-code.html#environements-have-layers",
+    "href": "chapters/sec1/1-1-env-as-code.html#environements-have-layers",
+    "title": "1  Environments as Code",
+    "section": "1.2 Environements have layers",
+    "text": "1.2 Environements have layers\n\n\n\nLayer\nContents\nExample\n\n\n\n\nPackages\nR packages\ncori.db\n\n\nSystem\nR versions / GDAL / MacOS\n14.4.1\n\n\nhardware\nPhysical / Virtual hardware\nApple M3\n\n\n\nHardware and System should be in the hand of IT (see later chapter 7 and 14), packages layer should be the data scientist.",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Environments as Code</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-1-env-as-code.html#the-package-layer",
+    "href": "chapters/sec1/1-1-env-as-code.html#the-package-layer",
+    "title": "1  Environments as Code",
+    "section": "1.3 The package layer",
+    "text": "1.3 The package layer\nPackage can in 3 places:\n\nrepository: CRAN / GH / “Supermarket”\nlibrary: a folder on a drive / “pantry”\nloaded : “ready to cook”\n\nEach project should have it’s own “pantry”\nProject was higlighted in text but I think it is important: if you do not have a project workflow it is way harder to do it.\nA package environement shouldbe :\n\nisolated and cannot be disrupted (example updating a packge in an other project)\ncan be “captured” and “transported”\n\nIn R: {Renv} (“light”/“not exactly the same” option also exist, Box, capsule)\nAuthor does not like Conda (good to not being alone!)",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Environments as Code</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-1-env-as-code.html#workflow",
+    "href": "chapters/sec1/1-1-env-as-code.html#workflow",
+    "title": "1  Environments as Code",
+    "section": "1.4 Workflow",
+    "text": "1.4 Workflow\n\nCreate a standalone directory with a virtual environment\n\n(spend time exploring renv/ and .gitignore)\n\nDocument environment state (see lockfile)\nCollaborate / deploy: you can’t share package because their binay can be OS or system specific, hence specific package need to be installed (could be a pain point).\nUse virtual env",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Environments as Code</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-1-env-as-code.html#under-the-hood",
+    "href": "chapters/sec1/1-1-env-as-code.html#under-the-hood",
+    "title": "1  Environments as Code",
+    "section": "1.5 Under the hood",
+    "text": "1.5 Under the hood\n\ntest .libpaths() in a specific project and in a “random” R session\norder of Paths matter",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Environments as Code</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-1-env-as-code.html#key-points",
+    "href": "chapters/sec1/1-1-env-as-code.html#key-points",
+    "title": "1  Environments as Code",
+    "section": "1.6 Key points",
+    "text": "1.6 Key points\n\nbeing in production is what make a DS a software developper\nkill and create new environment fast is important",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Environments as Code</span>"
     ]
   }
 ]

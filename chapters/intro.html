@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.552">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -150,7 +130,7 @@ div.csl-indent {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../chapters/sec1/1-1-env-as-code.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">1-1-env-as-code.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Environments as Code</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -320,7 +300,15 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link active" data-scroll-target="#definitions">Definitions</a></li>
+  <li><a href="#devops" id="toc-devops" class="nav-link" data-scroll-target="#devops">DevOps</a></li>
+  <li><a href="#process-and-people" id="toc-process-and-people" class="nav-link" data-scroll-target="#process-and-people">Process and people</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -344,15 +332,45 @@ div.csl-indent {
 </header>
 
 
-<p>This is a book created from markdown and executable code.</p>
-<p>See <span class="citation" data-cites="knuth84">Knuth (<a href="#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
+<p><strong>Learning objectives:</strong></p>
+<ul>
+<li>introducing some definitions and a bit of history</li>
+</ul>
+<section id="definitions" class="level2">
+<h2 class="anchored" data-anchor-id="definitions">Definitions</h2>
+<p><em>production</em> :</p>
+<blockquote class="blockquote">
+<p>affecting decision in your orgs / world</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>putting your work in front of someone else’s eyes</p>
+</blockquote>
+<p>We want:</p>
+<ul>
+<li><p>our works to be <strong>reliable</strong></p></li>
+<li><p>in a safe <strong>environment</strong></p></li>
+<li><p>our work to be <strong>available</strong></p></li>
+</ul>
+</section>
+<section id="devops" class="level2">
+<h2 class="anchored" data-anchor-id="devops">DevOps</h2>
+<blockquote class="blockquote">
+<p>DevOps is a set of <strong>cultural norms</strong>, <strong>practices</strong>, and <strong>tooling</strong> to help make developing and deploying software <strong>smoother</strong> and <strong>lower risk</strong>.</p>
+</blockquote>
+<p>.. but is a squishy concept and a “vendor” associated name</p>
+<p>It came in opposition to the <em>waterfall dev process</em> were you had a team doing Dev. and then one other doing Ops (Ops “make it works on everyone computer”).</p>
+</section>
+<section id="process-and-people" class="level2">
+<h2 class="anchored" data-anchor-id="process-and-people">Process and people</h2>
+<ul>
+<li><p>Are data scientist software developper?</p></li>
+<li><p>Are we in the red flags number 3?</p></li>
+<li><p>Do we need a workbench (ie using ec2) ?</p></li>
+<li><p>should we do the exercice with <code>penguins</code> or one of our dataset?</p></li>
+</ul>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-knuth84" class="csl-entry" role="listitem">
-Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
-</div>
-</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
