@@ -16,7 +16,7 @@ We want:
 
 - our works to be **reliable**
 
-- in a safe **environement** 
+- in a safe **environment** 
 
 - our work to be **available** 
 
@@ -26,7 +26,7 @@ We want:
 
 .. but is a squishy concept and a "vendor" associated name 
 
-It came in opposition to the *waterfall dev process* were you had a team doing Dev. and then one other doing Ops (Ops "make it works on veryone computer"). 
+It came in opposition to the *waterfall dev process* were you had a team doing Dev. and then one other doing Ops (Ops "make it works on everyone computer"). 
 
 ## Process and people
 

@@ -6,7 +6,7 @@
 
  - should be treated as "cattle not pet" / should be *stateless*
 
-- Risk of it "works on my machine"
+- Risk of it "only works on my machine"
 
 Building a completly reproducible environement is a "fool’s errand" but first step should be easy.
 
@@ -66,4 +66,7 @@ Author does not like Conda (good to not being alone!)
 
 ## Key points 
 
+- being in production is what make a DS a software developper 
+
+- kill and create new environment fast is important
 
