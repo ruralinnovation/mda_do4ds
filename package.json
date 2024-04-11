@@ -20,10 +20,11 @@
     "url": "git+ssh://git@github.com/ruralinnovation/wiki"
   },
   "scripts": {
-    "build": "npm run render:mermaid && quarto render --output-dir _site",
+    "build": "npm run  build:readme && npm run render:mermaid && quarto render --output-dir _book",
+    "build:readme": "quarto render README.qmd --to gfm --output README.md",
     "clean": "rm -rf _site/*",
     "preview": "quarto preview",
-    "test:mermaid": "mmdc -i img/input.mmd -o img/output.svg",
+    "render:mermaid": "mmdc -i img/input.mmd -o img/output.svg",
     "mermaid": "mmdc"
   }
 }

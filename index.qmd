@@ -1,20 +1,6 @@
-# Preface {.unnumbered}
+### Preface {.unnumbered}
 
-The MDA team at CORI will do a book club and review the book [DevOps for Data Science](https://do4ds.com/) wrote be **Alex K Gold** here.
-
-Book club inspiration: https://github.com/r4ds 
-
-
-## proposed workflow:
-
-    1. Clone the repo
-
-    2. Create a specific branch: ` git checkout -b intro_env_as`
-
-    3. Commit as needed
-
-    4. Push your commits in a pull request
-
+{{< include README.qmd >}}
 
 This is a Quarto book.
 
