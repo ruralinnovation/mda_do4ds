@@ -1,4 +1,6 @@
-.quarto/
-_book/
+.[A-Za-z]*
 
 /.quarto/
+_book/
+_site/
+/data/
