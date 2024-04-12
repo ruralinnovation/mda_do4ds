@@ -1,0 +1,58 @@
+---
+title: "Data Project Architecture"
+execute:
+    echo: true
+    output: true
+    message: false
+    warning: false
+---
+
+## Initial project setup
+
+The last chapter, [Environments as Code](./1-1-env-as-code.qmd), introduced the example project that we will use throughout the book. You can either clone a starter template for this project from <a href="https://github.com/new?template_name=do4ds_project&template_owner=ruralinnovation" target="_blank">do4ds_project</a> or create the project from scratch yourself using the following Quarto CLI commands (taken from the <a href="https://quarto.org/docs/websites/" target="_blank">Quarto documentation</a>):
+```
+quarto create project website do4ds_project
+# Choose (don't open) when prompted
+
+quarto preview do4ds_project
+```
+
+... if the quarto preview command loads a new website in your web browser, go back to the terminal and use `Ctrl+C` to terminate the preview server. Change to the project directory and setup a local python virtual environment (if needed, you can grab the <a href="https://raw.githubusercontent.com/ruralinnovation/do4ds_project/main/requirements.txt" target="_blank">`requirements.txt` file from here</a>):
+```
+cd do4ds_project
+# If using python, create and activate a local virtual environment
+python -m venv ./venv
+source venv/bin/activate
+venv/bin/python -m pip install -r requirements.txt
+```
+
+Now that you are in the local project directory you can use the quarto `preview` command without arguments to continue seeing updates to the local project in your browser:
+```
+quarto preview
+
+# Alternately, if you copied the project template from Github, you can use npm...
+npm run preview
+```
+
+If you did not use the project template, make sure to create the [`eda.qmd`](https://do4ds.com/chapters/sec1/1-1-env-as-code.html#eda-in-r) and [`model.qmd`](https://do4ds.com/chapters/sec1/1-1-env-as-code.html#modeling-in-python) files from chapter 1 and add them to the sidebar section of `_quarto.yml`:
+```
+project:
+  type: website
+
+website:
+  title: "do4ds_project"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - eda.qmd
+      - model.qmd
+
+```
+
+![](../../img/do4ds_project.png)
+

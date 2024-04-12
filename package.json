@@ -1,11 +1,11 @@
 {
-  "name": "@cori-risi/wiki",
+  "name": "mda_do4ds",
   "version": "0.0.1",
   "author": "Rural Innovation Strategies, Inc.",
-  "description": "MDA team wiki",
+  "description": "MDA team book club",
   "private": true,
   "license": "ISC",
-  "homepage": "https://ruralinnovation.github.io/wiki/",
+  "homepage": "https://ruralinnovation.github.io/mda_do4ds/",
   "keywords": [
     "documentation",
     "quarto",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ruralinnovation/wiki"
+    "url": "git+ssh://git@github.com/ruralinnovation/mda_do4ds"
   },
   "scripts": {
     "build": "npm run  build:readme && npm run render:mermaid && quarto render --output-dir _book",
     "build:readme": "quarto render README.qmd --to gfm --output README.md",
-    "clean": "rm -rf _site/*",
+    "clean": "rm -rf _book/*",
     "preview": "quarto preview",
     "render:mermaid": "mmdc -i img/input.mmd -o img/output.svg",
     "mermaid": "mmdc"

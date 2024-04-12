@@ -1,7 +1,9 @@
-.[A-Za-z]*
+.[A-Za-z_]*
 
 /.quarto/
 _book/
 _site/
 /data/
+/do4ds_project/
 /node_modules/
+/venv/

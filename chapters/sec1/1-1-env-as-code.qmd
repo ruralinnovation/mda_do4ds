@@ -1,4 +1,11 @@
-# Environments as Code
+---
+title: "Environments as Code"
+execute:
+    echo: true
+    output: true
+    message: false
+    warning: false
+---
 
 ## Environments: 
 

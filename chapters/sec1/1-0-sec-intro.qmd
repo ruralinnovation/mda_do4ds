@@ -1,4 +1,4 @@
-# DevOps Lessons for Data Science
+# DevOps Lessons for Data Science {.unnumbered .unlisted}
 
 > You are a software developer.
 

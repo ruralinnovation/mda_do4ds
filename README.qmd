@@ -1,10 +1,10 @@
 ---
 title: "MDA DevOps for Data Science"
 execute:
-  echo: true
-  output: true
-  message: false
-  warning: false
+    echo: true
+    output: true
+    message: false
+    warning: false
 ---
 
 The MDA team at CORI will do a book club and review the book [DevOps for Data Science](https://do4ds.com/) wrote be **Alex K Gold** here.
