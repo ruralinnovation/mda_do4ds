@@ -1,0 +1,50 @@
+# MDA DevOps for Data Science
+
+The MDA team at CORI will do a book club and review the book [DevOps for
+Data Science](https://do4ds.com/) wrote be **Alex K Gold** here.
+
+- <a href="https://github.com/ruralinnovation/mda_do4ds" target="_blank">Book
+  study repo</a>
+- <a href="https://ruralinnovation.github.io/mda_do4ds" target="_blank">Book
+  study site</a>
+- <a href="https://drive.google.com/drive/folders/1F_8fxj3gkyS5yHvmrzO2L__C6xXnAzO7" target="_blank">Book
+  study google drive</a>
+
+### Planning:
+
+1.  Introduction + Environments as Code: Olivier
+2.  Data Project Architecture: John
+3.  Databases and Data APIs: Brittany
+4.  Logging and Monitoring: Dolley
+5.  Deployments and Code Promotion: Camden
+6.  Demystifying Docker: John
+7.  …
+
+### Workflow:
+
+1.  Clone this repo
+
+2.  Create a specific branch:
+
+<!-- -->
+
+      git checkout -b ch-?/???
+      # (replace `?` with the chapter number and `???` with a name/title)
+
+3.  Install [Quarto CLI](https://quarto.org/docs/get-started/)
+
+4.  Install local dependencies:
+
+<!-- -->
+
+      npm install
+
+6.  Preview Quarto site:
+
+<!-- -->
+
+      npm run preview
+
+7.  Make changes and commit as needed
+
+8.  Push commits and create a pull request
