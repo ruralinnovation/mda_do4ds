@@ -2,19 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "MDA book club do4ds",
+    "title": "MDA DevOps for Data Science",
     "section": "",
-    "text": "Preface\nThe MDA team at CORI will do a book club and review the book DevOps for Data Science wrote be Alex K Gold here.\nBook club inspiration: https://github.com/r4ds",
-    "crumbs": [
-      "Preface"
-    ]
-  },
-  {
-    "objectID": "index.html#proposed-workflow",
-    "href": "index.html#proposed-workflow",
-    "title": "MDA book club do4ds",
-    "section": "proposed workflow:",
-    "text": "proposed workflow:\n1. Clone the repo\n\n2. Create a specific branch: ` git checkout -b intro_env_as`\n\n3. Commit as needed\n\n4. Push your commits in a pull request\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Preface\nThe MDA team at CORI will do a book club and review the book DevOps for Data Science wrote be Alex K Gold here.\n\nBook study repo\nBook study site\nBook study google drive\n\n\n\nPlanning:\n\nIntroduction + Environments as Code: Olivier\nData Project Architecture: John\nDatabases and Data APIs: Brittany\nLogging and Monitoring: Dolley\nDeployments and Code Promotion: Camden\nDemystifying Docker: John\n…\n\n\n\nWorkflow:\n\nClone this repo\nCreate a specific branch:\n\n  git checkout -b ch-?/???\n  # (replace `?` with the chapter number and `???` with a name/title)\n\nInstall Quarto CLI\nInstall local dependencies:\n\n  npm install\n\nPreview Quarto site:\n\n  npm run preview\n\nMake changes and commit as needed\nPush commits and create a pull request\n\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
       "Preface"
     ]
@@ -144,6 +134,50 @@
     "crumbs": [
       "DevOps Lessons for Data Science",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Environments as Code</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-2-proj-arch.html",
+    "href": "chapters/sec1/1-2-proj-arch.html",
+    "title": "2  Data Project Architecture",
+    "section": "",
+    "text": "2.1 Initial project setup\nThe last chapter, Environments as Code, introduced the example project that we will use throughout the book. You can either clone a starter template for this project from do4ds_project or create the project from scratch yourself using the following Quarto CLI commands (taken from the Quarto documentation):\n… if the quarto preview command loads a new website in your web browser, go back to the terminal and use Ctrl+C to terminate the preview server. Change to the project directory and setup a local python virtual environment (if needed, you can grab the requirements.txt file from here):\nNow that you are in the local project directory you can use the quarto preview command without arguments to continue seeing updates to the local project in your browser:\nIf you did not use the project template, make sure to create the eda.qmd and model.qmd files from chapter 1 and add them to the sidebar section of _quarto.yml:",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Project Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-2-proj-arch.html#initial-project-setup",
+    "href": "chapters/sec1/1-2-proj-arch.html#initial-project-setup",
+    "title": "2  Data Project Architecture",
+    "section": "",
+    "text": "quarto create project website do4ds_project\n# Choose (don't open) when prompted\n\nquarto preview do4ds_project\n\ncd do4ds_project\n# If using python, create and activate a local virtual environment\npython -m venv ./venv\nsource venv/bin/activate\nvenv/bin/python -m pip install -r requirements.txt\n\nquarto preview\n\n# Alternately, if you copied the project template from Github, you can use npm...\nnpm run preview\n\nproject:\n  type: website\n\nwebsite:\n  title: \"do4ds_project\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n  sidebar:\n    style: \"docked\"\n    search: true\n    contents:\n      - eda.qmd\n      - model.qmd",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Project Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-2-proj-arch.html#key-takeaways",
+    "href": "chapters/sec1/1-2-proj-arch.html#key-takeaways",
+    "title": "2  Data Project Architecture",
+    "section": "2.2 Key Takeaways",
+    "text": "2.2 Key Takeaways\nThis chapter gives an opiniated overview of good design and conceptual layout practices in regards to a data project. The areas of responsibility within the project our broken out into 1) Presentation, 2) Processing, and 3) Data layers. The categories that a given data project may fall into our further divided into 1) jobs, 2) apps, 3) reports and 4) API’s. The rest of the chapter discusses how to break a project down into the previously mentioned layers, as well as considerations for optimizing the Processing and Data layers.",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Project Architecture</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/sec1/1-2-proj-arch.html#lab",
+    "href": "chapters/sec1/1-2-proj-arch.html#lab",
+    "title": "2  Data Project Architecture",
+    "section": "2.3 Lab",
+    "text": "2.3 Lab\nTo complete part 1 of the lab, I had to modify the example code. First, I added a line that would generate a vetiver model and assign it to v and then I changed the path to the local folder where the model could be stored:\nfrom pins import board_folder\nfrom vetiver import vetiver_pin_write\nfrom vetiver import VetiverModel\n\nv = VetiverModel(model, model_name = \"penguin_model\")\n\nmodel_board = board_folder(\n  \"data/model\",\n  allow_pickle_read = True\n)\nvetiver_pin_write(model_board, v)\nIn addition to these changes, I created a separate Python file with the code to run the vetiver API, called api.py, which also required updates to the VetiverApi call to ensure that the API server had the correct input params in order to process the prediction:\nfrom palmerpenguins import penguins\nfrom pandas import get_dummies\nfrom sklearn.linear_model import LinearRegression\nfrom pins import board_folder\nfrom vetiver import VetiverModel\nfrom vetiver import VetiverAPI\n\n# This is how you would reload the model from disk...\nb = board_folder('data/model', allow_pickle_read = True)\nv = VetiverModel.from_pin(b, 'penguin_model')\n\n# ... however VertiverAPI also uses the model inputs to define params from the prototype\ndf = penguins.load_penguins().dropna()\ndf.head(3)\nX = get_dummies(df[['bill_length_mm', 'species', 'sex']], drop_first = True)\ny = df['body_mass_g']\n\nmodel = LinearRegression().fit(X, y)\n\nv = VetiverModel(model, model_name = \"penguin_model\", prototype_data = X)\n\napp = VetiverAPI(v, check_prototype = True)\napp.run(port = 8000)\n… and then used python api.py to run the API. Once running, you can navigate to http://127.0.0.1:8000/docs in a web browser to see the autogenerated API documentation",
+    "crumbs": [
+      "DevOps Lessons for Data Science",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Data Project Architecture</span>"
     ]
   }
 ]

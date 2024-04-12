@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="MDA">
-<meta name="dcterms.date" content="2024-04-05">
+<meta name="dcterms.date" content="2024-04-12">
 
 <title>MDA book club do4ds</title>
 <style>
@@ -137,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chapters/sec1/1-2-proj-arch.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">1-2-proj-arch.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Data Project Architecture</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./chapters/sec2/2-0-sec-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2-0-sec-intro.html</span></a>
+ <span class="menu-text">IT/Admin for Data Science</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -228,7 +228,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./chapters/sec3/3-0-sec-intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3-0-sec-intro.html</span></a>
+ <span class="menu-text">Enterprise-grade Data Science</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -305,10 +305,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
-  <ul class="collapse">
-  <li><a href="#proposed-workflow" id="toc-proposed-workflow" class="nav-link" data-scroll-target="#proposed-workflow">proposed workflow:</a></li>
-  </ul></li>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#planning" id="toc-planning" class="nav-link" data-scroll-target="#planning">Planning:</a></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow:</a></li>
   </ul>
 </nav>
     </div>
@@ -317,7 +316,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MDA book club do4ds</h1>
+<h1 class="title">MDA DevOps for Data Science</h1>
 </div>
 
 
@@ -334,7 +333,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 5, 2024</p>
+      <p class="date">April 12, 2024</p>
     </div>
   </div>
   
@@ -346,24 +345,52 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
+<section id="preface" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="preface">Preface</h3>
 <p>The MDA team at CORI will do a book club and review the book <a href="https://do4ds.com/">DevOps for Data Science</a> wrote be <strong>Alex K Gold</strong> here.</p>
-<p>Book club inspiration: https://github.com/r4ds</p>
-<section id="proposed-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="proposed-workflow">proposed workflow:</h2>
-<pre><code>1. Clone the repo
-
-2. Create a specific branch: ` git checkout -b intro_env_as`
-
-3. Commit as needed
-
-4. Push your commits in a pull request</code></pre>
+<ul>
+<li><a href="https://github.com/ruralinnovation/mda_do4ds" target="_blank">Book study repo</a></li>
+<li><a href="https://ruralinnovation.github.io/mda_do4ds" target="_blank">Book study site</a></li>
+<li><a href="https://drive.google.com/drive/folders/1F_8fxj3gkyS5yHvmrzO2L__C6xXnAzO7" target="_blank">Book study google drive</a></li>
+</ul>
+</section>
+<section id="planning" class="level3">
+<h3 class="anchored" data-anchor-id="planning">Planning:</h3>
+<ol type="1">
+<li>Introduction + Environments as Code: Olivier</li>
+<li>Data Project Architecture: John</li>
+<li>Databases and Data APIs: Brittany</li>
+<li>Logging and Monitoring: Dolley</li>
+<li>Deployments and Code Promotion: Camden</li>
+<li>Demystifying Docker: John</li>
+<li>…</li>
+</ol>
+</section>
+<section id="workflow" class="level3">
+<h3 class="anchored" data-anchor-id="workflow">Workflow:</h3>
+<ol type="1">
+<li><p>Clone this repo</p></li>
+<li><p>Create a specific branch:</p></li>
+</ol>
+<pre><code>  git checkout -b ch-?/???
+  # (replace `?` with the chapter number and `???` with a name/title)</code></pre>
+<ol start="3" type="1">
+<li><p>Install <a href="https://quarto.org/docs/get-started/">Quarto CLI</a></p></li>
+<li><p>Install local dependencies:</p></li>
+</ol>
+<pre><code>  npm install</code></pre>
+<ol start="6" type="1">
+<li>Preview Quarto site:</li>
+</ol>
+<pre><code>  npm run preview</code></pre>
+<ol start="7" type="1">
+<li><p>Make changes and commit as needed</p></li>
+<li><p>Push commits and create a pull request</p></li>
+</ol>
 <p>This is a Quarto book.</p>
 <p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
