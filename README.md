@@ -1,7 +1,7 @@
 # MDA DevOps for Data Science
 
 The MDA team at CORI will do a book club and review the book [DevOps for
-Data Science](https://do4ds.com/) wrote be **Alex K Gold** here.
+Data Science](https://do4ds.com/) writen by **Alex K Gold** here.
 
 - <a href="https://github.com/ruralinnovation/mda_do4ds" target="_blank">Book
   study repo</a>
@@ -12,12 +12,16 @@ Data Science](https://do4ds.com/) wrote be **Alex K Gold** here.
 
 ### Planning:
 
-1.  Introduction + Environments as Code: Olivier
-2.  Data Project Architecture: John
-3.  Databases and Data APIs: Brittany
-4.  Logging and Monitoring: Dolley
-5.  Deployments and Code Promotion: Camden
-6.  Demystifying Docker: John
+1.  [Introduction + Environments as
+    Code](./chapters/sec1/1-1-env-as-code.qmd): Olivier
+2.  [Data Project Architecture](./chapters/sec1/1-2-proj-arch.qmd): John
+3.  [Databases and Data APIs](./chapters/sec1/1-3-data-access.qmd):
+    Brittany
+4.  [Logging and Monitoring](./chapters/sec1/1-4-monitor-log.qmd):
+    Dolley
+5.  [Deployments and Code
+    Promotion](./chapters/sec1/1-5-deployments.qmd): Camden
+6.  [Demystifying Docker](./chapters/sec1/1-6-docker.qmd): John
 7.  …
 
 ### Workflow:
