@@ -20,7 +20,7 @@
     "url": "git+ssh://git@github.com/ruralinnovation/mda_do4ds"
   },
   "scripts": {
-    "build": "npm run  build:readme && npm run render:mermaid && quarto render --output-dir _book",
+    "build": "npm run build:readme && npm run render:mermaid && quarto render --output-dir _book",
     "build:readme": "quarto render README.qmd --to gfm --output README.md",
     "clean": "rm -rf _book/*",
     "preview": "quarto preview",
