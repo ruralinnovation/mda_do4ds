@@ -7,7 +7,7 @@ execute:
     warning: false
 ---
 
-The MDA team at CORI will do a book club and review the book [DevOps for Data Science](https://do4ds.com/) writen by **Alex K Gold** here.
+The MDA team at CORI will do a book club and review the book [DevOps for Data Science](https://do4ds.com/) written by **Alex K Gold** here.
 
 - <a href="https://github.com/ruralinnovation/mda_do4ds" target="_blank">Book study repo</a>
 - <a href="https://ruralinnovation.github.io/mda_do4ds" target="_blank">Book study site</a>
