@@ -1,0 +1,3 @@
+[submodule "do4ds_project"]
+	path = do4ds_project
+	url = https://github.com/ruralinnovation/do4ds_project.git

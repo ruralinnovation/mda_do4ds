@@ -9,7 +9,7 @@ execute:
 
 ## Initial project setup
 
-The last chapter, [Environments as Code](./1-1-env-as-code.qmd), introduced the example project that we will use throughout the book. You can either clone a starter template for this project from <a href="https://github.com/new?template_name=do4ds_project&template_owner=ruralinnovation" target="_blank">do4ds_project</a> or create the project from scratch yourself using the following Quarto CLI commands (taken from the <a href="https://quarto.org/docs/websites/" target="_blank">Quarto documentation</a>):
+The last chapter, [Environments as Code](./1-1-env-as-code.qmd), introduced the example project that we will use throughout the book. You can either ~~clone a starter template for~~ fork the project repo from <a href="https://github.com/ruralinnovation/do4ds_project/fork" target="_blank">do4ds_project</a> or create the project from scratch yourself using the following Quarto CLI commands (taken from the <a href="https://quarto.org/docs/websites/" target="_blank">Quarto documentation</a>):
 ```
 quarto create project website do4ds_project
 # Choose (don't open) when prompted
@@ -30,11 +30,11 @@ Now that you are in the local project directory you can use the quarto `preview`
 ```
 quarto preview
 
-# Alternately, if you copied the project template from Github, you can use npm...
+# Alternately, if you forked the project sample from Github, you can use npm...
 npm run preview
 ```
 
-If you did not use the project template, make sure to create the [`eda.qmd`](https://do4ds.com/chapters/sec1/1-1-env-as-code.html#eda-in-r) and [`model.qmd`](https://do4ds.com/chapters/sec1/1-1-env-as-code.html#modeling-in-python) files from chapter 1 and add them to the sidebar section of `_quarto.yml`:
+If you did not fork the project sample, make sure to create the [`eda.qmd`](https://do4ds.com/chapters/sec1/1-1-env-as-code.html#eda-in-r) and [`model.qmd`](https://do4ds.com/chapters/sec1/1-1-env-as-code.html#modeling-in-python) files from chapter 1 and add them to the sidebar section of `_quarto.yml`:
 ```
 project:
   type: website
