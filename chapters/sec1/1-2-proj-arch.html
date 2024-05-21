@@ -368,7 +368,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="initial-project-setup" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="initial-project-setup"><span class="header-section-number">2.1</span> Initial project setup</h2>
-<p>The last chapter, <a href="../../chapters/sec1/1-1-env-as-code.html">Environments as Code</a>, introduced the example project that we will use throughout the book. You can either clone a starter template for this project from <a href="https://github.com/new?template_name=do4ds_project&amp;template_owner=ruralinnovation" target="_blank">do4ds_project</a> or create the project from scratch yourself using the following Quarto CLI commands (taken from the <a href="https://quarto.org/docs/websites/" target="_blank">Quarto documentation</a>):</p>
+<p>The last chapter, <a href="../../chapters/sec1/1-1-env-as-code.html">Environments as Code</a>, introduced the example project that we will use throughout the book. You can either <del>clone a starter template for</del> fork the project repo from <a href="https://github.com/ruralinnovation/do4ds_project/fork" target="_blank">do4ds_project</a> or create the project from scratch yourself using the following Quarto CLI commands (taken from the <a href="https://quarto.org/docs/websites/" target="_blank">Quarto documentation</a>):</p>
 <pre><code>quarto create project website do4ds_project
 # Choose (don't open) when prompted
 
@@ -382,9 +382,9 @@ venv/bin/python -m pip install -r requirements.txt</code></pre>
 <p>Now that you are in the local project directory you can use the quarto <code>preview</code> command without arguments to continue seeing updates to the local project in your browser:</p>
 <pre><code>quarto preview
 
-# Alternately, if you copied the project template from Github, you can use npm...
+# Alternately, if you forked the project sample from Github, you can use npm...
 npm run preview</code></pre>
-<p>If you did not use the project template, make sure to create the <a href="https://do4ds.com/chapters/sec1/1-1-env-as-code.html#eda-in-r"><code>eda.qmd</code></a> and <a href="https://do4ds.com/chapters/sec1/1-1-env-as-code.html#modeling-in-python"><code>model.qmd</code></a> files from chapter 1 and add them to the sidebar section of <code>_quarto.yml</code>:</p>
+<p>If you did not fork the project sample, make sure to create the <a href="https://do4ds.com/chapters/sec1/1-1-env-as-code.html#eda-in-r"><code>eda.qmd</code></a> and <a href="https://do4ds.com/chapters/sec1/1-1-env-as-code.html#modeling-in-python"><code>model.qmd</code></a> files from chapter 1 and add them to the sidebar section of <code>_quarto.yml</code>:</p>
 <pre><code>project:
   type: website
 
