@@ -20,11 +20,10 @@ While I believe the topic should have been introduced earlier in this book, this
 
 At CORI/RISI we have our own "data connector" package called [`cori.db`](https://github.com/ruralinnovation/cori.db), which allows each of us to connect directly to the database and interact with it in a prescribed way. At the moment, we do not have an equivalent set of function to interact with the CORI Data API, although we have created a placeholder package called [`cori.data.api`](https://github.com/ruralinnovation/cori.data.api) which may one day provide such functions in `R`.
 
+
 ## Lab / Project
 
 ### Updates
 
 ...
-
-
 

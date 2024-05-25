@@ -7,3 +7,14 @@ execute:
     warning: false
 ---
 
+## Key Takeaways
+
+...
+
+
+## Lab / Project
+
+### Updates
+
+...
+
