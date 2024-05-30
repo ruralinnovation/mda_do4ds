@@ -25,5 +25,5 @@ At CORI/RISI we have our own "data connector" package called [`cori.db`](https:/
 
 ### Updates
 
-...
+The lab work introduces the `duckdb` package, so I created a new markdown file called ["00_data.qmd"](https://github.com/ruralinnovation/do4ds_project/blob/main/00_data.qmd) in the project sample that demonstrates the most basic syntax for creating a new database (which is stored in a flat file on local disk) and loading the penguins data into a new table in that database. To make sure that this file is processed before the others, I prefixed the names of all the quarto files with sequences numbers ("00_...", "01_...", etc.). The model and api code has been updated to retrieve the penguin table from the local database store with `duckdb`. Olivier added an ["02_model_R.qmd"](https://github.com/ruralinnovation/do4ds_project/blob/main/02_model_R.qmd) file to demonstrate the `R` code that is equivalent to the modeling example used in the book. The same could be done for the `vetiver` code used to deploy the resulting model as an API endpoint.
 
