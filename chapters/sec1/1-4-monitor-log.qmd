@@ -9,6 +9,8 @@ execute:
 
 ## Key Takeaways
 
+In any data processing and/or analysis, something is going to go wrong.
+
 Data science (and by extension programmatic data analysis) is hard, because the output is "novel", so we should  "use process metrics to reveal a problem before it surfaces in your results".
 
 > [Process metrics](https://www.sciencedirect.com/topics/computer-science/process-metrics) - quantitative and qualitative measures related to a process, its performance and its evolution.
@@ -44,7 +46,5 @@ Log messages are often formatted as either plain text of JSON. Log output defaul
 
 ### Updates
 
-...
-
-
+We started logging messages and errors in the `api.py` and `app.R` scripts, with the respective `logging` and `log4r` packages.
 
