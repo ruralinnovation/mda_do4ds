@@ -9,7 +9,35 @@ execute:
 
 ## Key Takeaways
 
-...
+Data science (and by extension programmatic data analysis) is hard, because the output is "novel", so we should  "use process metrics to reveal a problem before it surfaces in your results".
+
+> [Process metrics](https://www.sciencedirect.com/topics/computer-science/process-metrics) - quantitative and qualitative measures related to a process, its performance and its evolution.
+
+The easiest level to observe or monitor process metrics is at the Data and Processing layers (why?).
+
+The author believes that all job-type projects should be encapsulated in a _literate programming_ format (i.e. Quarto markdown), so that the output (log) of the process is combined with notes about its context. Is this an evolution over comments in the code?
+
+Things to check when transforming data:
+
+  - Quality of each join (row count)
+  - Cross-tabulation before and after recoding (`dplyr::mutate`)
+  - Fitness of model (i.e. bias, variance, [drift](https://www.youtube.com/watch?v=LGXi2R70pVc), etc.)
+
+For the purposes of logging, `print` is a good start, but consistently using a logging package is better. The author recommends`log4r`. With this package, the output (like most conventional log outputs) has 3 components:
+
+  - _log metadata_
+  - _log level_
+  - _log data_
+
+Log level commonly uses the following ranking:
+
+  - DEBUG
+  - INFO
+  - WARN (or WARNING)
+  - ERROR
+  - CRITICAL
+
+Log messages are often formatted as either plain text of JSON. Log output defaults to the current terminal, but can be directed to a file on local disk, a remote store like S3, or to a logging API like AWS CloudWatch.
 
 
 ## Lab / Project

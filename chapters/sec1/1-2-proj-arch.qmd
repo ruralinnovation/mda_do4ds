@@ -10,14 +10,18 @@ execute:
 ## Key Takeaways
 
 This chapter gives an opinionated overview of good design and conceptual layout practices in regards to   a data project. The areas of responsibility within the project are broken out into
+
   1) _Presentation_,
   2) _Processing_, and
   3) _Data_ layers.
+
 The categories that a given data project may fall into our further divided into
+
   1) _jobs_,
   2) _apps_,
   3) _reports_ and
   4) _API's_.
+
 The rest of the chapter discusses how to break a project down into the previously mentioned layers, as well as considerations for optimizing the Processing and Data layers.
 
 
