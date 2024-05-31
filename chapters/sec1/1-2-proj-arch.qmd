@@ -7,7 +7,23 @@ execute:
     warning: false
 ---
 
-## Initial project setup
+## Key Takeaways
+
+This chapter gives an opinionated overview of good design and conceptual layout practices in regards to   a data project. The areas of responsibility within the project are broken out into
+  1) _Presentation_,
+  2) _Processing_, and
+  3) _Data_ layers.
+The categories that a given data project may fall into our further divided into
+  1) _jobs_,
+  2) _apps_,
+  3) _reports_ and
+  4) _API's_.
+The rest of the chapter discusses how to break a project down into the previously mentioned layers, as well as considerations for optimizing the Processing and Data layers.
+
+
+## Lab / Project
+
+### Initial Setup
 
 The last chapter, [Environments as Code](./1-1-env-as-code.qmd), introduced the example project that we will use throughout the book. You can either ~~clone a starter template for~~ fork the project repo from <a href="https://github.com/ruralinnovation/do4ds_project/fork" target="_blank">do4ds_project</a> or create the project from scratch yourself using the following Quarto CLI commands (taken from the <a href="https://quarto.org/docs/websites/" target="_blank">Quarto documentation</a>):
 ```
@@ -17,7 +33,7 @@ quarto create project website do4ds_project
 quarto preview do4ds_project
 ```
 
-... if the quarto preview command loads a new website in your web browser, go back to the terminal and use `Ctrl+C` to terminate the preview server. Change to the project directory and setup a local python virtual environment (if needed, you can grab the <a href="https://raw.githubusercontent.com/ruralinnovation/do4ds_project/main/requirements.txt" target="_blank">`requirements.txt` file from here</a>):
+... if the `quarto preview` command loads a new website in your web browser, go back to the terminal and use `Ctrl+C` to terminate the preview server. Change to the project directory and setup a local python virtual environment (you can grab the <a href="https://raw.githubusercontent.com/ruralinnovation/do4ds_project/main/requirements.txt" target="_blank">`requirements.txt` file from here</a>, if needed):
 ```
 cd do4ds_project
 # If using python, create and activate a local virtual environment
@@ -26,7 +42,7 @@ source venv/bin/activate
 venv/bin/python -m pip install -r requirements.txt
 ```
 
-Now that you are in the local project directory you can use the quarto `preview` command without arguments to continue seeing updates to the local project in your browser:
+Now that you are in the local project directory you can use the `quarto preview` command without arguments to continue seeing updates to the local project in your browser:
 ```
 quarto preview
 
@@ -57,11 +73,7 @@ website:
 ![](../../img/do4ds_project.png)
 
 
-## Key Takeaways
-
-This chapter gives an opiniated overview of good design and conceptual layout practices in regards to   a data project. The areas of responsibility within the project our broken out into 1) _Presentation_, 2) _Processing_, and 3) _Data_ layers. The categories that a given data project may fall into our further divided into 1) _jobs_, 2) _apps_, 3) _reports_ and 4) _API's_. The rest of the chapter discusses how to break a project down into the previously mentioned layers, as well as considerations for optimizing the Processing and Data layers.
-
-## Lab
+### Updates
 
 To complete part 1 of the lab, I had to modify the example code. First, I added a line that would generate a `vetiver` model and assign it to `v` and then I changed the path to the local folder where the model could be stored:
 ```{.python .cell-code}

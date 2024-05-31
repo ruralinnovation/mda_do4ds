@@ -1,9 +1,22 @@
 ---
-title: ""
+title: "Logging and Monitoring"
 execute:
     echo: true
     output: true
     message: false
     warning: false
 ---
+
+## Key Takeaways
+
+...
+
+
+## Lab / Project
+
+### Updates
+
+...
+
+
 
