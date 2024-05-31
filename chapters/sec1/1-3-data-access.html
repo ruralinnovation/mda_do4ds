@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MDA book club do4ds -</title>
+<title>MDA book club do4ds - 3&nbsp; Databases and Data APIs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating fullcontent">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/sec1/1-0-sec-intro.html">DevOps Lessons for Data Science</a></li><li class="breadcrumb-item"><a href="../../chapters/sec1/1-3-data-access.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">1-3-data-access.html</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/sec1/1-0-sec-intro.html">DevOps Lessons for Data Science</a></li><li class="breadcrumb-item"><a href="../../chapters/sec1/1-3-data-access.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Databases and Data APIs</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -142,25 +142,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/sec1/1-3-data-access.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">1-3-data-access.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Databases and Data APIs</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/sec1/1-4-monitor-log.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">1-4-monitor-log.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Logging and Monitoring</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/sec1/1-5-deployments.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">1-5-deployments.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Key Takeaways</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/sec1/1-6-docker.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">1-6-docker.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Key Takeaways</span></span></a>
   </div>
 </li>
       </ul>
@@ -299,15 +299,57 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link active" data-scroll-target="#key-takeaways"><span class="header-section-number">3.1</span> Key Takeaways</a></li>
+  <li><a href="#lab-project" id="toc-lab-project" class="nav-link" data-scroll-target="#lab-project"><span class="header-section-number">3.2</span> Lab / Project</a>
+  <ul class="collapse">
+  <li><a href="#updates" id="toc-updates" class="nav-link" data-scroll-target="#updates"><span class="header-section-number">3.2.1</span> Updates</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/sec1/1-0-sec-intro.html">DevOps Lessons for Data Science</a></li><li class="breadcrumb-item"><a href="../../chapters/sec1/1-3-data-access.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Databases and Data APIs</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Databases and Data APIs</span></h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<section id="key-takeaways" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">3.1</span> Key Takeaways</h2>
+<p>Although it’s not explicitly described in this chapter, a database is, at minimum, two things: 1) a datastore (i.e., a way to store structured data) and 2) a compute engine (i.e., a way to perform operations on structured data). In most programming languages, the way you begin an interaction with a database is to create a connection object. The methods and params used to create that object will vary from database type to type and from language to language, including how credentials are provided or set, but the successful creation of this object implies that you have an open connection to the database with a specific set of permissions (read/write/remove, etc.).</p>
+<p>Another source of data may be an API, or Application Programming Interface. The term “API” is actually used in this chapter in two different contexts; the first is to describe the method (or interface) used in particular programming languages to connect to a database, but in the second usage the context is <em>REST</em> or REST-ful API’s. These are collections of URL’s that allow a server to listen for requests for data from clients. Once a client makes a request to a given URL with specified parameters, the server <em>evaluates</em> the request, computes a response and returns the results. Although this is very similar to how a database operates, a REST-ful API uses a specific protocol called the HyperText Transfer Protocol (HTTP). This protocol uses the <em>parts</em> of the URL (i.e., the path and the query string) and the <em>verb</em> of the client request (i.e., GET, POST, PUT, DELETE, etc.) as a way to specify how the server should evaluate the request. This protocol is widely available in many applications, including those that do no support any database drivers (like web browsers). Each programming languages has specific packages or libraries for making HTTP requests, as well as packages that provide “wrapper” functions; functions that hide the details of each API request from the developer and simply take arguments and return results in a synchronous manner. In addition to parameters, a REST-ful API endpoint may accept a <em>body</em> (block of code or text) as part of the request, usually in the form of a JSON object, which is often also the preferred format of the response body (again, block of code or text) chosen by API developers. There are various ways to include credentials with HTTP requests.</p>
+<p>While I believe the topic should have been introduced earlier in this book, this chapter also discusses environment variables and how they can be used to provide configuration settings to the process that the code is running within, including database or API credentials.</p>
+<p>At CORI/RISI we have our own “data connector” package called <a href="https://github.com/ruralinnovation/cori.db"><code>cori.db</code></a>, which allows each of us to connect directly to the database and interact with it in a prescribed way. At the moment, we do not have an equivalent set of function to interact with the CORI Data API, although we have created a placeholder package called <a href="https://github.com/ruralinnovation/cori.data.api"><code>cori.data.api</code></a> which may one day provide such functions in <code>R</code>.</p>
+</section>
+<section id="lab-project" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="lab-project"><span class="header-section-number">3.2</span> Lab / Project</h2>
+<section id="updates" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="updates"><span class="header-section-number">3.2.1</span> Updates</h3>
+<p>The lab work introduces the <code>duckdb</code> package, so I created a new markdown file called <a href="https://github.com/ruralinnovation/do4ds_project/blob/main/00_data.qmd">“00_data.qmd”</a> in the project sample that demonstrates the most basic syntax for creating a new database (which is stored in a flat file on local disk) and loading the penguins data into a new table in that database. To make sure that this file is processed before the others, I prefixed the names of all the quarto files with sequences numbers (“00_…”, “01_…”, etc.). The model and api code has been updated to retrieve the penguin table from the local database store with <code>duckdb</code>. Olivier added an <a href="https://github.com/ruralinnovation/do4ds_project/blob/main/02_model_R.qmd">“02_model_R.qmd”</a> file to demonstrate the <code>R</code> code that is equivalent to the modeling example used in the book. The same could be done for the <code>vetiver</code> code used to deploy the resulting model as an API endpoint.</p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -726,8 +768,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/sec1/1-4-monitor-log.html" class="pagination-link" aria-label="1-4-monitor-log.html">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">1-4-monitor-log.html</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/sec1/1-4-monitor-log.html" class="pagination-link" aria-label="Logging and Monitoring">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Logging and Monitoring</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
