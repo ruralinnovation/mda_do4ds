@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Logging and Monitoring"
 execute:
     echo: true
     output: true
