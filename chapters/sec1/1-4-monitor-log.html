@@ -336,13 +336,40 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="key-takeaways" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">4.1</span> Key Takeaways</h2>
-<p>…</p>
+<p>In any data processing and/or analysis, something is going to go wrong.</p>
+<p>Data science (and by extension programmatic data analysis) is hard, because the output is “novel”, so we should “use process metrics to reveal a problem before it surfaces in your results”.</p>
+<blockquote class="blockquote">
+<p><a href="https://www.sciencedirect.com/topics/computer-science/process-metrics">Process metrics</a> - quantitative and qualitative measures related to a process, its performance and its evolution.</p>
+</blockquote>
+<p>The easiest level to observe or monitor process metrics is at the Data and Processing layers (why?).</p>
+<p>The author believes that all job-type projects should be encapsulated in a <em>literate programming</em> format (i.e.&nbsp;Quarto markdown), so that the output (log) of the process is combined with notes about its context. Is this an evolution over comments in the code?</p>
+<p>Things to check when transforming data:</p>
+<ul>
+<li>Quality of each join (row count)</li>
+<li>Cross-tabulation before and after recoding (<code>dplyr::mutate</code>)</li>
+<li>Fitness of model (i.e.&nbsp;bias, variance, <a href="https://www.youtube.com/watch?v=LGXi2R70pVc">drift</a>, etc.)</li>
+</ul>
+<p>For the purposes of logging, <code>print</code> is a good start, but consistently using a logging package is better. The author recommends<code>log4r</code>. With this package, the output (like most conventional log outputs) has 3 components:</p>
+<ul>
+<li><em>log metadata</em></li>
+<li><em>log level</em></li>
+<li><em>log data</em></li>
+</ul>
+<p>Log level commonly uses the following ranking:</p>
+<ul>
+<li>DEBUG</li>
+<li>INFO</li>
+<li>WARN (or WARNING)</li>
+<li>ERROR</li>
+<li>CRITICAL</li>
+</ul>
+<p>Log messages are often formatted as either plain text of JSON. Log output defaults to the current terminal, but can be directed to a file on local disk, a remote store like S3, or to a logging API like AWS CloudWatch.</p>
 </section>
 <section id="lab-project" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="lab-project"><span class="header-section-number">4.2</span> Lab / Project</h2>
 <section id="updates" class="level3" data-number="4.2.1">
 <h3 data-number="4.2.1" class="anchored" data-anchor-id="updates"><span class="header-section-number">4.2.1</span> Updates</h3>
-<p>…</p>
+<p>We started logging messages and errors in the <code>api.py</code> and <code>app.R</code> scripts, with the respective <code>logging</code> and <code>log4r</code> packages.</p>
 
 
 </section>
