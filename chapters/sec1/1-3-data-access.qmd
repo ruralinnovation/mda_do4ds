@@ -9,9 +9,11 @@ execute:
 
 ## Key Takeaways
 
-Although it's not explicitly described in this chapter, a database is, at minimum, two things: 
+Although it's not explicitly described in this chapter, a database is, at minimum, two things:
+
   1) a datastore (i.e., a way to store structured data) and
   2) a compute engine (i.e., a way to perform operations on structured data).
+
 In most programming languages, the way you begin an interaction with a database is to create a connection object. The methods and params used to create that object will vary from database type to type and from language to language, including how credentials are provided or set, but the successful creation of this object implies that you have an open connection to the database with a specific set of permissions (read/write/remove, etc.).
 
 Another source of data may be an API, or Application Programming Interface. The term "API" is actually used in this chapter in two different contexts; the first is to describe the method (or interface) used in particular programming languages to connect to a database, but in the second usage the context is _REST_ or REST-ful API's. These are collections of URL's that allow a server to listen for requests for data from clients. Once a client makes a request to a given URL with specified parameters, the server _evaluates_ the request, computes a response and returns the results. Although this is very similar to how a database operates, a REST-ful API uses a specific protocol called the HyperText Transfer Protocol (HTTP). This protocol uses the _parts_ of the URL (i.e., the path and the query string) and the _verb_ of the client request (i.e., GET, POST, PUT, DELETE, etc.) as a way to specify how the server should evaluate the request. This protocol is widely available in many applications, including those that do no support any database drivers (like web browsers). Each programming languages has specific packages or libraries for making HTTP requests, as well as packages that provide "wrapper" functions; functions that hide the details of each API request from the developer and simply take arguments and return results in a synchronous manner. In addition to parameters, a REST-ful API endpoint may accept a _body_ (block of code or text) as part of the request, usually in the form of a JSON object, which is often also the preferred format of the response body (again, block of code or text) chosen by API developers. There are various ways to include credentials with HTTP requests.
