@@ -238,23 +238,23 @@
   {
     "objectID": "chapters/sec1/1-5-deployments.html",
     "href": "chapters/sec1/1-5-deployments.html",
-    "title": "5  Key Takeaways",
+    "title": "5  Chapter 5 Notes",
     "section": "",
-    "text": "5.1 Lab / Project",
+    "text": "5.1 Key Takeaways\nBenefits of CI/CD: - Ability to build your code from scratch - Source code is always available in a central repository - Automated testing and deployment simplifies and standardizes the testing/deployment process\nTactics: - Separate the dev and prod environments - Changes only happen through a promotion process from dev (through test) and into prod - Code promotion happens via Version Control (e.g., git)\nAuthor’s suggestion for managing data science projects: 1. Maintain two long-running branches – main is the prod version of your project and test is a long-running pre-prod version. 2. Code can only be promoted to main via a merge from test. Direct pushes to main are not allowed. 3. New functionality is developed in short-lived feature branches that are merged into test when you think they’re ready to go. Once sufficient approvals are granted, the feature branch changes in test are merged into main.\nOther: - Use YAML for conditional environments\n…",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Key Takeaways</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5 Notes</span>"
     ]
   },
   {
     "objectID": "chapters/sec1/1-5-deployments.html#lab-project",
     "href": "chapters/sec1/1-5-deployments.html#lab-project",
-    "title": "5  Key Takeaways",
-    "section": "",
-    "text": "5.1.1 Updates\n…",
+    "title": "5  Chapter 5 Notes",
+    "section": "5.2 Lab / Project",
+    "text": "5.2 Lab / Project\n\n5.2.1 Updates\n…",
     "crumbs": [
       "DevOps Lessons for Data Science",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Key Takeaways</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Chapter 5 Notes</span>"
     ]
   },
   {

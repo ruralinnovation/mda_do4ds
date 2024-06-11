@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MDA book club do4ds - 5&nbsp; Key Takeaways</title>
+<title>MDA book club do4ds - 5&nbsp; Chapter 5 Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/sec1/1-0-sec-intro.html">DevOps Lessons for Data Science</a></li><li class="breadcrumb-item"><a href="../../chapters/sec1/1-5-deployments.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Key Takeaways</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/sec1/1-0-sec-intro.html">DevOps Lessons for Data Science</a></li><li class="breadcrumb-item"><a href="../../chapters/sec1/1-5-deployments.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5 Notes</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -154,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../chapters/sec1/1-5-deployments.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Key Takeaways</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5 Notes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -304,9 +304,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#lab-project" id="toc-lab-project" class="nav-link active" data-scroll-target="#lab-project"><span class="header-section-number">5.1</span> Lab / Project</a>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link active" data-scroll-target="#key-takeaways"><span class="header-section-number">5.1</span> Key Takeaways</a></li>
+  <li><a href="#lab-project" id="toc-lab-project" class="nav-link" data-scroll-target="#lab-project"><span class="header-section-number">5.2</span> Lab / Project</a>
   <ul class="collapse">
-  <li><a href="#updates" id="toc-updates" class="nav-link" data-scroll-target="#updates"><span class="header-section-number">5.1.1</span> Updates</a></li>
+  <li><a href="#updates" id="toc-updates" class="nav-link" data-scroll-target="#updates"><span class="header-section-number">5.2.1</span> Updates</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -314,9 +315,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/sec1/1-0-sec-intro.html">DevOps Lessons for Data Science</a></li><li class="breadcrumb-item"><a href="../../chapters/sec1/1-5-deployments.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Key Takeaways</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/sec1/1-0-sec-intro.html">DevOps Lessons for Data Science</a></li><li class="breadcrumb-item"><a href="../../chapters/sec1/1-5-deployments.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5 Notes</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Key Takeaways</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Chapter 5 Notes</span></h1>
 </div>
 
 
@@ -333,11 +334,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="key-takeaways" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">5.1</span> Key Takeaways</h2>
+<p>Benefits of CI/CD: - Ability to build your code from scratch - Source code is always available in a central repository - Automated testing and deployment simplifies and standardizes the testing/deployment process</p>
+<p>Tactics: - Separate the dev and prod environments - Changes only happen through a promotion process from dev (through test) and into prod - Code promotion happens via Version Control (e.g., git)</p>
+<p>Author’s suggestion for managing data science projects: 1. Maintain two long-running branches – main is the prod version of your project and test is a long-running pre-prod version. 2. Code can only be promoted to main via a merge from test. Direct pushes to main are not allowed. 3. New functionality is developed in short-lived feature branches that are merged into test when you think they’re ready to go. Once sufficient approvals are granted, the feature branch changes in test are merged into main.</p>
+<p>Other: - Use YAML for conditional environments</p>
 <p>…</p>
-<section id="lab-project" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="lab-project"><span class="header-section-number">5.1</span> Lab / Project</h2>
-<section id="updates" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="updates"><span class="header-section-number">5.1.1</span> Updates</h3>
+</section>
+<section id="lab-project" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="lab-project"><span class="header-section-number">5.2</span> Lab / Project</h2>
+<section id="updates" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="updates"><span class="header-section-number">5.2.1</span> Updates</h3>
 <p>…</p>
 
 
