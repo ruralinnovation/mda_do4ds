@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Chapter 5 Notes"
 execute:
     echo: true
     output: true
@@ -8,6 +8,24 @@ execute:
 ---
 
 ## Key Takeaways
+
+Benefits of CI/CD:
+- Ability to build your code from scratch
+- Source code is always available in a central repository
+- Automated testing and deployment simplifies and standardizes the testing/deployment process
+
+Tactics:
+- Separate the dev and prod environments
+- Changes only happen through a promotion process from dev (through test) and into prod
+- Code promotion happens via Version Control (e.g., git)
+
+Author's suggestion for managing data science projects:
+1. Maintain two long-running branches – main is the prod version of your project and test is a long-running pre-prod version.
+2. Code can only be promoted to main via a merge from test. Direct pushes to main are not allowed.
+3. New functionality is developed in short-lived feature branches that are merged into test when you think they’re ready to go. Once sufficient approvals are granted, the feature branch changes in test are merged into main.
+
+Other:
+- Use YAML for conditional environments
 
 ...
 
